@@ -32,7 +32,6 @@ jobs:
       env:
         TOXENV: ${{ matrix.python.toxenv }}
       run: tox
-
     - name: Report coverage
       if: matrix.python.version == '3.10'
       run: |
